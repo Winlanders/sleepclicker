@@ -20,11 +20,8 @@ button {
   transition: transform 0.1s, background 0.3s;
 }
 
-.upgrade {
-  margin: 10px 0;
-  padding: 10px;
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 8px;
+button:hover {
+  transform: scale(1.05);
 }
 
 .main-button {
@@ -39,8 +36,11 @@ button {
   background: #38ada9;
 }
 
-button:hover {
-  transform: scale(1.05);
+.upgrade {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
 }
 
 .section {
@@ -50,7 +50,7 @@ button:hover {
 
 .progress {
   width: 100%;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
   height: 8px;
   margin: 5px 0;
