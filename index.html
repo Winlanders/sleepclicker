@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sleep Clicker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Sleep Clicker</h1>
+  <div id="stats">
+    <p>Dream Energy: <span id="de">0</span></p>
+    <p>Rest Points: <span id="rp">0</span></p>
+    <p>Lucidity: <span id="lucidity">0</span></p>
+  </div>
+  <button id="tap-button">Tap to Rest</button>
+
+  <h2>Upgrades</h2>
+  <div id="upgrades">
+    <div class="upgrade" id="bed-upgrade">
+      <h3>Bed: <span id="bed-name">Straw Mat</span></h3>
+      <button id="buy-bed">Buy Bed (<span id="bed-cost">10</span> DE)</button>
+    </div>
+    <div class="upgrade" id="pillow-upgrade">
+      <h3>Pillow: <span id="pillow-name">Cotton</span></h3>
+      <button id="buy-pillow">Buy Pillow (<span id="pillow-cost">15</span> DE)</button>
+    </div>
+    <div class="upgrade" id="bedding-upgrade">
+      <h3>Bedding: <span id="bedding-name">Standard Sheets</span></h3>
+      <button id="buy-bedding">Buy Bedding (<span id="bedding-cost">20</span> DE)</button>
+    </div>
+    <div class="upgrade" id="environment-upgrade">
+      <h3>Environment: <span id="environment-name">Nightstand</span></h3>
+      <button id="buy-environment">Buy Item (<span id="environment-cost">25</span> DE)</button>
+    </div>
+    <div class="upgrade" id="pet-upgrade">
+      <h3>Pet: <span id="pet-name">Sleep Sheep</span></h3>
+      <button id="buy-pet">Adopt Pet (<span id="pet-cost">50</span> DE)</button>
+    </div>
+  </div>
+
+  <h2>Prestige</h2>
+  <button id="prestige-button">Dream Awakening</button>
+  <p id="prestige-info"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
