@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sleep Clicker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-7TDmM3aqkqkNwAs7IqTmKLM/kPFZXw+TDL4lMNTAAtcOq4l8VuJ8uobEBVSdteY5nfvfMiKKR8HuYA0w/BfZpQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Sleep Clicker</h1>
+
+  <section id="stats" class="section">
+    <p><i class="fa-solid fa-star"></i> Dream Energy: <span id="de">0</span></p>
+    <p><i class="fa-solid fa-moon"></i> Rest Points: <span id="rp">0</span></p>
+    <p><i class="fa-solid fa-eye"></i> Lucidity: <span id="lucidity">0</span></p>
+  </section>
+
+  <button id="tap-button" class="main-button">Tap to Rest</button>
+
+  <section class="section">
+    <h2>Upgrades</h2>
+    <div id="upgrades">
+      <div class="upgrade" id="bed-upgrade" title="Improves tap power">
+        <h3><i class="fa-solid fa-bed"></i> Bed: <span id="bed-name">Straw Mat</span></h3>
+        <div class="progress"><div id="bed-progress" class="bar"></div></div>
+        <button id="buy-bed" class="buy-button">Buy Bed (<span id="bed-cost">10</span> DE)</button>
+      </div>
+      <div class="upgrade" id="pillow-upgrade" title="Boosts idle gains">
+        <h3><i class="fa-solid fa-feather"></i> Pillow: <span id="pillow-name">Cotton</span></h3>
+        <div class="progress"><div id="pillow-progress" class="bar"></div></div>
+        <button id="buy-pillow" class="buy-button">Buy Pillow (<span id="pillow-cost">15</span> DE)</button>
+      </div>
+      <div class="upgrade" id="bedding-upgrade" title="Increases tap power further">
+        <h3><i class="fa-solid fa-blanket"></i> Bedding: <span id="bedding-name">Standard Sheets</span></h3>
+        <div class="progress"><div id="bedding-progress" class="bar"></div></div>
+        <button id="buy-bedding" class="buy-button">Buy Bedding (<span id="bedding-cost">20</span> DE)</button>
+      </div>
+      <div class="upgrade" id="environment-upgrade" title="Raises idle gains">
+        <h3><i class="fa-solid fa-tree"></i> Environment: <span id="environment-name">Nightstand</span></h3>
+        <div class="progress"><div id="environment-progress" class="bar"></div></div>
+        <button id="buy-environment" class="buy-button">Buy Item (<span id="environment-cost">25</span> DE)</button>
+      </div>
+      <div class="upgrade" id="pet-upgrade" title="Pets multiply both tap and idle gains">
+        <h3><i class="fa-solid fa-paw"></i> Pet: <span id="pet-name">Sleep Sheep</span></h3>
+        <div class="progress"><div id="pet-progress" class="bar"></div></div>
+        <button id="buy-pet" class="buy-button">Adopt Pet (<span id="pet-cost">50</span> DE)</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Prestige</h2>
+    <button id="prestige-button" class="main-button">Dream Awakening</button>
+    <p id="prestige-info"></p>
+  </section>
+
+  <section class="section" id="achievements">
+    <h2>Achievements</h2>
+    <ul id="achievement-list"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
